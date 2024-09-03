@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>CADASTRO DE SÉRIES E EPs ASSISTIDOS EM 2024</title>
+    <link rel="stylesheet" href="cadastroseries.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CADASTRO DE SÉRIES E EPISÓDIOS ASSISTIDOS EM 2024</h1>
+            <h2>Preencha os campos abaixo para adicionar nova série ou episódio:</h2>
+        <form action="create_series.php" method="post">
+            <label for="nome">Nome do seriado:</label>
+            <input type="text" name="nome" id="nome" required>
+
+            <label for="genero">Gênero:</label>
+            <input type="text" name="genero" id="genero">
+
+            <label for="temporada">Temporada:</label>
+            <input type="number" name="temporada" id="temporada" min="1">
+
+            <label for="episodio">Episódio:</label>
+            <input type="number" name="episodio" id="episodio" min="1">
+
+            <label for="nota">Nota do episódio:</label>
+            <input type="number" name="nota" id="nota" min="1" max="10">
+
+            <input type="submit" value="Adicionar">
+        </form>
+    </div>
+</body>
+</html>
